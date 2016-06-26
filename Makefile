@@ -19,6 +19,7 @@ bdd:
 
 cover:
 	./vendor/bin/phpunit --coverage-html ./cover test
+
 deps:
 	wget -q https://getcomposer.org/composer.phar -O ./composer.phar
 	chmod +x composer.phar
