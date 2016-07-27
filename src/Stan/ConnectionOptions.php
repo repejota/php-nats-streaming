@@ -24,7 +24,7 @@ class ConnectionOptions
      *
      * @var string
      */
-    private $version = "0.8.0";
+    private $version = "0.0.1";
 
     /**
      * Get the URI for a server.
@@ -99,5 +99,18 @@ class ConnectionOptions
     {
         $this->version = $version;
         return $this;
+    }
+
+    /**
+     * Get the options JSON string.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        $a = [
+            "version" => $this->version
+        ];
+        return json_encode($a);
     }
 }
