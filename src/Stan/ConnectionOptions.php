@@ -1,5 +1,5 @@
 <?php
-namespace Nats;
+namespace Stan;
 /**
  * ConnectionOptions Class.
  */
